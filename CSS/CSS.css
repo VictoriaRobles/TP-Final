@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(../IMAGENES/Fondo.jpg);
+    background-repeat: no-repeat;
+    color: rgb(243, 229, 229);
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: rgba(7, 75, 75, 0.463);
+}
+
+ul
+{
+color: rgb(8, 3, 21);
+}
+
+table {
+    border-collapse: separate;
+}
+
+.Logo {
+    width: 70px;
+    height: 70px;
+   
+}
+
+.ImagCarrusel {
+    width: 1200px;
+    height: 500px;
+    margin-left: 25px;
+}
+
+section{
+    background-color: rgba(121, 70, 131, 0.333);
+    grid-column: 1;
+}
+
+aside {
+    background-color: rgba(10, 49, 57, 0.525);
+    grid-column: 2;
+    border: rgb(220, 255, 80), solid, 2px;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.886);
+    color: rgba(196, 237, 255, 0.687);
+    text-align: center;
+    text-decoration: underline;
+    mask-position: relative;
+    margin-bottom: 0%;
+}    
+
+article
+{
+        background-color: rgba(96, 115, 79, 0.463);
+        margin: 100px;
+    }
+    
+main
+ {
+    display: grid;
+ }
+
+.Imagenes {
+height: 100px;
+width: 100px;
+padding: 10px;
+}
+
+td 
+{
+    text-align: center;
+}
+
+form
+{
+    border: solid rgb(9, 80, 51) 3px ;
+    width: 200px;
+    height: 400px;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: lightslategray;
+    font-size: 13px;
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    align-items: center;
+    background-color: rgba(170, 225, 238, 0.144);
+    position: absolute;
+    align-items: center;
+}
+
+#Botón 
+{
+    background-color: rgb(18, 172, 199);
+    border: solid rgb(19, 93, 136);
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    width: 90%;
+    height: 40px;
+    padding: 10px; 
+}
+
+input 
+{
+    color: lightsteelblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea
+{
+    color: lightsteelblue;
+    margin-top: 5px;   
+    margin-bottom: 5px;
+}
+
+.iconos
+{
+height: 50px;
+width: 50px;
+}
+
+.Botonera 
+{
+    display: inline-flex;
+}
+
+.btn
+{
+padding: 0px;
+color: rgba(0, 0, 0, 0.968);
+background-color: rgb(6, 164, 182);
+}
+
+.salir 
+{
+    padding: 0px;
+    color: rgba(233, 225, 225, 0.968);
+    background-color: rgba(41, 37, 37, 0.779);
+    margin-left: 500px;
+    }
+
+
+
+.nav-link
+{
+    color: rgba(0, 0, 0, 0.968);
+}
+
+#botonseccion
+{
+    background-color: rgb(44, 44, 171);
+    color: aliceblue;
+}

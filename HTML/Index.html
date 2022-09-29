@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Amigurumis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/CSS.css"> 
+</head>
+<body>
+  <!-- Agregué una imagen a la barra de navegación con un enlace al sitio de inicial del emprendimiento, agregué un botón con pop up para indicar que estás saliendo del sitio, agregué un botoón que ejecuta la función que calcula el plazo de entrega-->
+  <nav class="navbar navbar-expand-lg bg-light">  
+      <a  href="../HTML/Index.html" target="_blank"> <img class="Logo" src="../IMAGENES/Logo.jpg" alt="Logo"></a>            
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../ARCHIVOS/Catálogo.pdf" download="Descargae">Descargar Gatálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/Formulario.html">Formulario de contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../JAVA SCRIPT/Calculo plazo de entrega.js"> <button class="btn"> Plazo de entrega </button> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item dropdown">
+          </li>
+          <li><a class="salir"  href="../HTML/Formulario.html">cerrar sesion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="Inicio">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../IMAGENES/Carrusel 1.jpg" class="ImagCarrusel" alt="Caballo amigurumi">
+        </div>
+        <div class="carousel-item">
+          <img src="../IMAGENES/Carrusel 2.jpg" class="ImagCarrusel" alt="Gato amigurumi">
+        </div>
+        <div class="carousel-item">
+          <img src="../IMAGENES/Carrusel 3.jpg" class="ImagCarrusel" alt="Chicorita amigurumi">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+    <main>
+    <section>
+        <article>
+          <h1> ¿Qué es un amigurumi? </h1>
+          <p> El término amigurumi es un acrónimo en japonés, compuesto de: ami, "tejido", y nuigurumi, "muñeco de peluche". Ésta es una tendencia o moda japonesa que consiste en tejer pequeños muñecos mediante técnicas de croché o ganchillo</p>
+        </article>
+        <article>
+          <p> Cada Amigurumi posee un alma, el cual nos acompañará y será nuestro amigo y confidente de por vida, proporcionándonos protección y consuelo cuando nos sintamos tristes o confundidos, se trata de peluches especialmente tiernos y bonitos.
+
+          En algunos casos los Amigurumis también son usados como amuletos personales, y es muy común verlos en las oficinas, como adorno personal.</p>
+        </article>
+    </section>
+    <aside >
+      <h1 > Mirá cómo se hacen nuestros productos</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zj2j1AUDsDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+      <table border="1">
+        <h1> ¿Quienes somos? </h1>
+<tr>
+    <td>  </td>
+    <td> Nombre </td>
+    <td> Teléfono de contacto </td>
+</tr>
+<tr>
+    <td> <img class="Imagenes" src="../IMAGENES/Victoria.jpg" alt="Victoria"> </td>
+    <td> Victoria Robles   </td>
+    <td> 3364222290 </td>
+</tr>
+<tr>
+    <td> <img class="Imagenes" src="../IMAGENES/Paula.jpg" alt="Paula">  </td>
+    <td>  Paula Robles  </td>
+    <td> 3364366323 </td>
+</tr>
+</table>
+    
+    </aside>
+
+      <script>  
+      let btn = document.querySelector(".btn");
+      btn.onclick =function(e)
+      {
+      let altura= Number(prompt("Introduce altura del amigurumi en cm"));
+
+    if (altura>=100)
+    {
+    alert("El plazo de entrega es de 2 semanas");
+
+    }
+    else 
+    {
+    alert ("El plazo de entrega es de 1 semana");
+    }
+  }
+      </script>
+
+      <a href="#Inicio"> Ir al inicio </a>
+    </main>
+    <footer>
+      <ul class="Botonera">
+        <li><a  href="https://wa.me/3364222290?text=Quiero%20saber%20más"> <img class="iconos" src="../ICONOS/Whatsapp.png" alt="Whatsapp" > </a></li>
+        <li><a  href="https://web.facebook.com/luna.amigurumis.395"><img class="iconos" src="../ICONOS/Facebook.png" alt="Facebook"> </a></li>
+        <li><a  href="https://www.instagram.com/lunamigurumis/"><img class="iconos" src="../ICONOS/Instragram.png" alt="Instagram"></a></li>
+      </ul>
+
+      <p> 2022| Creado por Victoria Evangelina Robles | Todos los derechos reservados </p>
+    </footer>
+    <script src="../JAVA SCRIPT/TP Final.js"></script>
+</body>
+</html>
